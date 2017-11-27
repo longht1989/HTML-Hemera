@@ -1,0 +1,45 @@
+.client {
+    @include clearfix;
+    display: inline-block;
+    @include breakpoint(xs) {
+        text-align: center;
+    }
+    &__avatar {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 2px solid $brand-primary;
+        display: inline-block;
+        img {
+            width: 100%;
+            height: auto;
+        }
+        @include breakpoint(sm) {
+            float: left;
+            margin-right: 30px;
+            display: block;
+        }
+    }
+    &__info {
+        @include breakpoint(sm) {
+            float: left;
+            text-align: left;
+        }
+        margin-top: 10px;
+        text-align: center;
+    }
+    &__name {
+        color: $brand-primary;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    &__title {
+        color: #A5A5A5;
+        font-size: 16px;
+    }
+    &__quote {
+        margin-bottom: 46px;
+        font-size: 24px;
+    }
+}

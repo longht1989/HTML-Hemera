@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M11,6 L14,6 L13.625,9 L11,9 L11,18 L7.109375,18 L7.109375,9 L5,9 L5,6 L7.109375,6 L7.109375,3.984375 C7.109375,2.67186844 7.43749672,1.67969086 8.09375,1.0078125 C8.75000328,0.335934141 9.84374234,0 11.375,0 L14,0 L14,3 L12.40625,3 C11.812497,3 11.4296884,3.09374906 11.2578125,3.28125 C11.0859366,3.46875094 11,3.78124781 11,4.21875 L11,6 Z" id="icon-facebook" fill="#333333"></path>
+    </g>
+</svg>

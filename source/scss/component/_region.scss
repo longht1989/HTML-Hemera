@@ -1,0 +1,116 @@
+/* ====================================
+   All region in project
+   ==================================== */
+
+
+/* zone global style */
+
+.zone {
+    margin-bottom: 24px;
+    &__header {
+        padding: 8px;
+    }
+    &__title {
+        font-size: 18px;
+        line-height: 1.4em;
+        position: relative;
+        font-weight: bold;
+        color: $brand-primary;
+        &:hover {
+            color: $brand-success;
+            &::after {
+                background: $brand-success;
+            }
+        }
+    }
+    &__content {
+        @include clearfix();
+    }
+    &--grey {
+        background: #F4F4F4;
+        padding: 8px;
+    }
+    &--featured {
+        background: #111;
+        padding: 16px;
+    }
+}
+
+// area
+.area {
+    @include clearfix;
+    margin-top: 128px;
+    &__header {
+        margin-bottom: 82px;
+    }
+    &__title {
+        font-size: 14px;
+        line-height: 1.4em;
+        font-weight: bold;
+        display: inline-block;
+        border-bottom: 4px solid #000;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        &+.area__desc {
+            margin-top: 32px;
+        }
+    }
+    &__desc {
+        font-size: 24px;
+        .btn {
+            margin-top: 32px;
+        }
+    }
+    &__content {
+        @include clearfix;
+        overflow: hidden;
+        .area--video & {
+            background: url(../img/video-bg.png) center top no-repeat;
+            background-size: cover;
+            position: relative;
+            .story {
+                z-index: 5;
+            }
+            .bg-mask {
+                background: #171717;
+                opacity: 0.9;
+                z-index: 2;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+            #video_background {
+                z-index: 1;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+            }
+        }
+    }
+    &--quote {
+        .area__content {
+            background: url(../img/quote-bg.png) center center no-repeat;
+            background-size: contain;
+        }
+    }
+    &--featured {
+        .area__content {
+            padding: 64px 0;
+            background: $brand-primary;
+        }
+    }
+}
+
+// ads
+.qc {
+    @include clearfix();
+    margin-bottom: 24px;
+    text-align: center;
+}

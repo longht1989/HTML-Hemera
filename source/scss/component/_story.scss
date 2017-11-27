@@ -1,0 +1,159 @@
+/* style for story */
+
+.story {
+    @include clearfix;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s linear !important;
+    &__thumb {
+        overflow: hidden;
+        img {
+            @include transition(all, 0.3, linear);
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    &__header {
+        @include transition(all, 0.3, linear);
+    }
+    &__footer {}
+    &__title {
+        font-size: 14px;
+        line-height: 1.4em;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+    &__meta {
+        font-size: 14px;
+        line-height: 1.4em;
+    }
+    &__summary {
+        font-size: 14px;
+        line-height: 1.4em;
+    }
+    &__source {
+        color: $brand-primary;
+        margin-right: 8px;
+        &:hover {
+            color: $brand-success;
+        }
+    }
+    &__time {
+        color: #999999;
+    }
+    
+    &--mask {
+        position: relative;
+        .story__header {
+            position: absolute;
+            left: 24px;
+            bottom: 24px;
+            @include breakpoint(sm) {
+                left: 48px;
+            }
+            a {
+                color: white;
+                &:hover {
+                    color: $brand-primary;
+                }
+            }
+        }
+        .story__summary {
+            color: white;
+        }
+        &:hover {
+            .story__thumb {
+                img {
+                    box-shadow: 0px 0px 30px 7px rgba(0, 0, 0, 0.2);
+                    transform: scale(0.85);
+                }
+            }
+            .story__header {
+                transform: translate(5%, -10%);
+                @include breakpoint(sm) {
+                    transform: translate(10%, -50%);
+                }
+                a {
+                    color: $brand-primary;
+                }
+            }
+        }
+    }
+    .area--video & {
+        opacity: 0.3;
+        padding: 60px 40px;
+        .story__title {
+            position: relative;
+            padding-bottom: 20px;
+            font-size: 24px;
+            line-height: 1.3em;
+            margin-bottom: 68px;
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 75px;
+                height: 4px;
+                background: white;
+            }
+            a {
+                color: white;
+                &:hover {
+                    color: $brand-primary;
+                }
+            }
+        }
+        .story__summary {
+            color: white;
+            margin-bottom: 109px;
+            max-height: 12.6em;
+            overflow: hidden;
+            opacity: 0;
+            @include transition(all, 0.2, linear);
+            transition-delay: 0.1s;
+        }
+        .story__rank {
+            font-size: 10px;
+            margin-bottom: 32px;
+            color: white;
+        }
+        &:hover,
+        &.is-active {
+            opacity: 1;
+            .story__summary {
+                opacity: 1;
+            }
+        }
+        .story__footer {
+            position: absolute;
+            left: 40px;
+            bottom: 60px;
+        }
+    }
+    .area--featured & {
+        padding: 0 20px;
+        .story__title {
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 1.3em;
+            margin-bottom: 68px;
+            a {
+                color: white;
+                &:hover {
+                    color: #333;
+                }
+            }
+        }
+        .story__meta {
+            opacity: 0.5;
+            color: white;
+        }
+        .story__footer {
+            position: absolute;
+            left: 20px;
+            bottom: 0px;
+        }
+    }
+}

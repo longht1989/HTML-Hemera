@@ -1,0 +1,87 @@
+/* ====================================
+   Footer's style
+   ==================================== */
+
+#site-footer {
+    @include clearfix;
+}
+
+.site-footer {
+    background: #222;
+    &__content {
+        padding-top: 128px;
+        @include clearfix;
+        @include breakpoint(xs) {
+            padding-top: 64px;
+        }
+    }
+    &__logo {
+        img {
+            width: auto;
+            height: 100px;
+        }
+    }
+    &__box {
+        margin-bottom: 64px;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 10px;
+        color: $brand-primary;
+        text-transform: uppercase;
+        margin-bottom: 35px;
+    }
+    &__text {
+        color: #909090;
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+    &__link {
+        color: white;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #fff;
+        @include transition(all, 0.2, linear);
+        &:hover {
+            color: $brand-primary;
+            border-bottom-color: $brand-primary;
+        }
+    }
+    &__bottombar {
+        padding: 32px 0;
+        border-top: 1px solid #2D2D2D;
+        @include clearfix;
+        .site-footer__text {
+            float: left;
+        }
+    }
+    &__menu {
+
+        text-align: right;
+        @include breakpoint(xs) {
+            display: none;
+        }
+        li {
+            display: inline-block;
+            a {
+                padding: 0 32px;
+                font-size: 16px;
+                display: block;
+                @include transition(all, 0.2, linear);
+                color: white;
+                &:hover {
+                    color: $brand-primary;
+                }
+            }
+        }
+    }
+    #go-top {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        cursor: pointer;
+        img {
+            width: 36px;
+            height: 36px;
+        }
+    }
+}

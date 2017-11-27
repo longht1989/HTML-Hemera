@@ -1,0 +1,140 @@
+#site-content {
+    @include clearfix;
+}
+
+.site-wrap {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    @include clearfix();
+    &+.site-wrap {
+        margin-top: 24px;
+    }
+    @include breakpoint(md) {
+        width: 1248px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+//index layout
+.zone {
+    &--news {
+        .zone__content {
+            .story {
+                @include breakpoint(sm) {
+                    width: 50%;
+                    float: left;
+                }
+            }
+        }
+    }
+}
+
+.area {
+    &--video {
+        .area__content {
+            .story {
+                @include breakpoint(sm) {
+                    width: 50%;
+                    float: left;
+                    &:nth-child(2n) {
+                        border-left: 1px solid #E5E5E5;
+                    }
+                }
+                @include breakpoint(sm) {
+                    width: 25%;
+                    &+.story {
+                        border-left: 1px solid #E5E5E5;
+                    }
+                }
+            }
+        }
+    }
+    &--featured {
+        .story {
+            @include breakpoint(sm) {
+                width: 50%;
+                float: left;
+                &:nth-child(2n) {
+                    border-left: 1px solid #E5E5E5;
+                }
+            }
+            @include breakpoint(sm) {
+                width: 25%;
+                &+.story {
+                    border-left: 1px solid #E5E5E5;
+                }
+            }
+        }
+    }
+}
+
+.slider {
+    &-wrap {
+        @include breakpoint(sm) {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+// footer layout
+.site-footer {
+    &__logo {
+        margin-bottom: 64px;
+        @include breakpoint(sm) {
+            width: 33.33%;
+            float: left;
+            margin-bottom: 0;
+        }
+    }
+    &__info {
+        @include breakpoint(sm) {
+            width: 66.67%;
+            float: right;
+        }
+    }
+}
+
+&.two-cols {
+    @include clearfix;
+    font-size: 0;
+    margin-left: -8px;
+    margin-right: -8px;
+    >* {
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 8px;
+    }
+    &-sm {
+        @include breakpoint(sm) {
+            @include clearfix;
+            font-size: 0;
+            margin-left: -8px;
+            margin-right: -8px;
+            >* {
+                width: 50%;
+                display: inline-block;
+                vertical-align: top;
+                padding: 0 8px;
+            }
+        }
+    }
+}
+
+&.four-cols {
+    @include clearfix;
+    font-size: 0;
+    margin-left: -8px;
+    margin-right: -8px;
+    >* {
+        width: 25%;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 8px;
+    }
+}
