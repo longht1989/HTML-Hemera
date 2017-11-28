@@ -4,17 +4,17 @@
     @include clearfix;
     position: relative;
     overflow: hidden;
-    transition: all 0.2s linear !important;
+    transition: all 0.2s ease-in-out !important;
     &__thumb {
         overflow: hidden;
         img {
-            @include transition(all, 0.3, linear);
+            @include transition(all, 0.3, ease-in-out);
             max-width: 100%;
             height: auto;
         }
     }
     &__header {
-        @include transition(all, 0.3, linear);
+        @include transition(all, 0.3, ease-in-out);
     }
     &__footer {}
     &__title {
@@ -41,7 +41,7 @@
     &__time {
         color: #999999;
     }
-    
+
     &--mask {
         position: relative;
         .story__header {
@@ -53,8 +53,9 @@
             }
             a {
                 color: white;
+                text-shadow: 0px 1px rgba(0, 0, 0, 0.3);
                 &:hover {
-                    color: $brand-primary;
+                    // color: $brand-primary;
                 }
             }
         }
@@ -74,7 +75,7 @@
                     transform: translate(10%, -50%);
                 }
                 a {
-                    color: $brand-primary;
+                    // color: $brand-primary;
                 }
             }
         }
@@ -119,17 +120,22 @@
             margin-bottom: 32px;
             color: white;
         }
+        .story__footer {
+            position: absolute;
+            left: 40px;
+            bottom: 60px;
+            .btn {}
+        }
         &:hover,
         &.is-active {
             opacity: 1;
             .story__summary {
                 opacity: 1;
             }
-        }
-        .story__footer {
-            position: absolute;
-            left: 40px;
-            bottom: 60px;
+            .btn {
+                color: black;
+                background-color: $brand-primary;
+            }
         }
     }
     .area--featured & {

@@ -1,5 +1,10 @@
 #site-content {
     @include clearfix;
+    background: url(../img/leaves-bg.png) center top repeat-x;
+    background-size: contain;
+    @include breakpoint(xs) {
+        background-position: center center;
+    }
 }
 
 .site-wrap {
