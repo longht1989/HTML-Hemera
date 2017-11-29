@@ -140,7 +140,7 @@
         }
         .menu__listing {
             display: none;
-            background: #f0f0f0;
+            background: $brand-primary;
             border-radius: 3px;
             padding: 4px 0;
             width: 230px;
@@ -148,15 +148,19 @@
             transform: none;
             right: 0;
             top: 100%;
+            @include breakpoint(xs) {
+                right: 16px;
+            }
             li {
                 display: block;
                 font-size: 14px;
                 a {
-                    padding: 8px;
+                    padding: 16px;
                     display: block;
                     transition: background 0.2s linear;
+                    color: white;
                     &:hover {
-                        background: #e0e0e0;
+                        background: #81af33;
                     }
                 }
                 &+li {
@@ -170,7 +174,7 @@
                 height: 0;
                 border-left: 10px solid transparent;
                 border-right: 10px solid transparent;
-                border-bottom: 10px solid #f0f0f0;
+                border-bottom: 10px solid $brand-primary;
                 position: absolute;
                 bottom: 100%;
                 right: 10px;
@@ -184,7 +188,7 @@
                 display: none !important;
                 &.m-show {
                     display: block !important;
-                    background: #f0f0f0;
+                    background: $brand-primary;
                     border-radius: 3px;
                     padding: 4px 0;
                     width: 230px;
@@ -195,12 +199,14 @@
                     z-index: 9;
                     li {
                         display: block;
+                        font-size: 14px;
                         a {
-                            padding: 8px;
+                            padding: 16px;
                             display: block;
                             transition: background 0.2s linear;
+                            color: white;
                             &:hover {
-                                background: #e0e0e0;
+                                background: #81af33;
                             }
                         }
                         &+li {
@@ -214,7 +220,7 @@
                         height: 0;
                         border-left: 10px solid transparent;
                         border-right: 10px solid transparent;
-                        border-bottom: 10px solid #f0f0f0;
+                        border-bottom: 10px solid $brand-primary;
                         position: absolute;
                         bottom: 100%;
                         right: 10px;

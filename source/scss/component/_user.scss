@@ -41,5 +41,8 @@
     &__quote {
         margin-bottom: 46px;
         font-size: 24px;
+        @include breakpoint(xs){
+            font-size: 18px;
+        }
     }
 }

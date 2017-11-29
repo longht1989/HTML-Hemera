@@ -78,9 +78,10 @@
 
 .slider {
     &-wrap {
+        margin: 0 auto;
+        width: 80%;
         @include breakpoint(sm) {
-            width: 80%;
-            margin: 0 auto;
+            width: 55%;
         }
     }
 }

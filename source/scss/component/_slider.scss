@@ -45,16 +45,16 @@
     }
     &-prev {
         left: 0;
-        transform: translate(0, -50%);
+        transform: translate(-100%, -50%);
         @include breakpoint(sm) {
-            transform: translate(-100%, -50%);
+            transform: translate(-200%, -50%);
         }
     }
     &-next {
         right: 0;
-        transform: translate(0, -50%);
+        transform: translate(100%, -50%);
         @include breakpoint(sm) {
-            transform: translate(100%, -50%);
+            transform: translate(200%, -50%);
         }
     }
 }
