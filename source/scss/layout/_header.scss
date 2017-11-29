@@ -13,8 +13,11 @@
         height: 80px;
         width: auto;
         @include transition(all, 0.2, linear);
+        a {
+            height: inherit;
+        }
         img {
-            height: 100%;
+            height: inherit;
             width: auto;
         }
     }
