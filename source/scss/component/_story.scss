@@ -28,7 +28,7 @@
         line-height: 1.4em;
     }
     &__summary {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 1.4em;
     }
     &__source {
@@ -41,7 +41,6 @@
     &__time {
         color: #999999;
     }
-
     &--mask {
         position: relative;
         .story__header {
@@ -78,6 +77,26 @@
                     // color: $brand-primary;
                 }
             }
+        }
+    }
+    &--horizontal {
+        .story__thumb {
+            margin-bottom: 16px;
+            @include breakpoint(sm) {
+                width: 50%;
+                float: right;
+                margin-left: 56px;
+            }
+        }
+        .story__header {
+            margin-bottom: 32px;
+        }
+        .story__title {
+            margin-bottom: 32px;
+            font-size: 24px;
+        }
+        &+.story--horizontal {
+            margin-top: 64px;
         }
     }
     .area--video & {

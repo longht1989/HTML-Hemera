@@ -30,7 +30,6 @@ $(function() {
     // aminate fade in index section
     window.sr = ScrollReveal({ reset: true });
     sr.reveal('.foo');
-    sr.reveal('.bar');
     // hover action video featured
     var videosource = $(".area--video .story").attr('data-video');
     $(".area--video .story").hover(
