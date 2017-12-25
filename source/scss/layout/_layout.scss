@@ -77,6 +77,24 @@
             }
         }
     }
+    &__grid {
+        li {
+            display: block;
+            padding: 60px 20px;
+            @include breakpoint(sm) {
+                display: inline-block;
+                padding: 120px 40px;
+                width: 33.33%;
+            }
+        }
+    }
+    &__footer {
+        .two-cols-md {
+            >* {
+                margin: 20px 0;
+            }
+        }
+    }
 }
 
 .slider {
@@ -141,6 +159,20 @@
     }
     &-sm {
         @include breakpoint(sm) {
+            @include clearfix;
+            font-size: 0;
+            margin-left: -8px;
+            margin-right: -8px;
+            >* {
+                width: 50%;
+                display: inline-block;
+                vertical-align: top;
+                padding: 0 8px;
+            }
+        }
+    }
+    &-md {
+        @include breakpoint(md) {
             @include clearfix;
             font-size: 0;
             margin-left: -8px;

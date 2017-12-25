@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="521px" height="322px" viewBox="0 0 521 322" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon-sprites</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon-sprites" stroke-width="2">
+            <g id="arrow-target-1526_3d0ede45-bc86-4e83-a2fb-bc4df7816c04" transform="translate(2.000000, 2.000000)" stroke-linecap="round">
+                <circle id="Oval" stroke="#1E1E1E" cx="50" cy="53" r="50"></circle>
+                <circle id="Oval" stroke="#1E1E1E" cx="50.5" cy="52.5" r="30.5"></circle>
+                <circle id="Oval" stroke="#96C93D" cx="50" cy="53" r="9"></circle>
+                <path d="M22.2631579,94 L9,116 M79.7368421,94 L93,116" id="Shape" stroke="#1E1E1E"></path>
+                <path d="M50,53 L114.8,15.7037037 L119.178378,0 M114.8,15.7037037 L131,20.9382716" id="Shape" stroke="#96C93D"></path>
+            </g>
+            <g id="message-app-4672_bb03b2ae-781b-4a63-aeff-c64156b65ef3" transform="translate(2.000000, 202.000000)" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M65,77.3333333 L65,108.266667 C65,112.537669 61.5762951,116 57.3529412,116 L7.64705882,116 C3.42370485,116 0,112.537669 0,108.266667 L0,7.73333333 C-8.48994078e-16,3.46233127 3.42370485,8.58572472e-16 7.64705882,0 L49.7058824,0 M0,15.4666667 L45.8823529,15.4666667 M0,88.9333333 L65,88.9333333" id="Shape" stroke="#1E1E1E"></path>
+                <circle id="Oval" stroke="#1E1E1E" cx="33" cy="102" r="2"></circle>
+                <path d="M107.029412,0 L51.9705882,0 C49.2254082,0 47,2.21546837 47,4.9483871 L47,40.7290323 C47,42.0414261 47.5236855,43.3000677 48.4558516,44.2280703 C49.3880177,45.1560729 50.6523063,45.6774194 51.9705882,45.6774194 L66.1176471,45.6774194 L66.1176471,59 L79.5,45.6774194 L107.029412,45.6774194 C108.347694,45.6774194 109.611982,45.1560729 110.544148,44.2280703 C111.476315,43.3000677 112,42.0414261 112,40.7290323 L112,4.9483871 C112,2.21546837 109.774592,9.29722249e-15 107.029412,0 Z" id="Shape" stroke="#96C93D"></path>
+                <circle id="Oval" stroke="#96C93D" cx="79" cy="24" r="2"></circle>
+                <circle id="Oval" stroke="#96C93D" cx="63" cy="24" r="2"></circle>
+                <circle id="Oval" stroke="#96C93D" cx="94" cy="24" r="2"></circle>
+            </g>
+            <g id="radar-signal-727_87480aa3-1f45-4d17-8ffe-397468a126ac" transform="translate(403.000000, 2.000000)" stroke-linecap="round">
+                <path d="M98.8876622,99.0442145 C81.4654575,116.45414 54.9540972,120.944678 32.7786676,110.241866 C10.6032379,99.5390541 -2.39440893,75.9797769 0.367604818,51.4942156 C3.12961856,27.0086543 21.0482262,6.9430625 45.0496249,1.45845416 C69.0510237,-4.02615417 93.8946735,6.26774738 107,27.1274306 M79.9588739,80.0983951 C70.9581248,89.1800282 57.3439098,91.8700192 45.5703692,86.8931143 C33.7968286,81.9162094 26.2307009,70.2728751 26.4588879,57.4829091 C26.6870748,44.6929431 34.6637058,33.3274078 46.6072704,28.7744037 C58.550835,24.2213996 72.060416,27.3961799 80.7314775,36.793665" id="Shape" stroke="#1E1E1E"></path>
+                <circle id="Oval" stroke="#96C93D" cx="58" cy="58" r="8"></circle>
+                <circle id="Oval" stroke="#96C93D" cx="104" cy="58" r="12"></circle>
+                <path d="M64,64 L99,99" id="Shape" stroke="#96C93D"></path>
+            </g>
+            <g id="content-post-3595_d45b1cbb-3738-4b48-854c-292853d8daec" transform="translate(202.000000, 203.000000)" stroke-linecap="round">
+                <polygon id="Shape" stroke="#202020" points="0 0 116 0 116 116 0 116"></polygon>
+                <path d="M62.9090909,20 L86.3636364,20 L62.9090909,20 Z M62.9090909,35.6 L102,35.6 L62.9090909,35.6 Z M62.9090909,51.2 L102,51.2 L62.9090909,51.2 Z M62.9090909,66.8 L86.3636364,66.8 L62.9090909,66.8 Z M62.9090909,82.4 L102,82.4 L62.9090909,82.4 Z M16,20 L47.2727273,20 L47.2727273,51.2 L16,51.2 L16,20 Z M16,66.8 L47.2727273,66.8 L47.2727273,98 L16,98 L16,66.8 Z" id="Shape" stroke="#94C73E"></path>
+            </g>
+            <g id="orion-svg-sprite" transform="translate(202.000000, 3.000000)">
+                <path d="M59,116 L59,77 M28,112.1 L59,77 M90,112.1 L59,77" id="Shape" stroke="#1E1E1E" stroke-linecap="round"></path>
+                <path d="M0,78.0487805 L116,78.0487805 M7.73333333,78.0487805 L7.73333333,0 L108.266667,0 L108.266667,78.0487805 M7.73333333,15.6097561 L108.266667,15.6097561" id="Shape" stroke="#96C840" stroke-linecap="round"></path>
+                <polyline id="Path-2" stroke="#1E1E1E" points="9 41.8992961 21.0555947 41.8992961 31.9912053 60 43.6975332 48.6946838 54.8381557 52.199937 70 33"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

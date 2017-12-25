@@ -60,6 +60,14 @@
         .btn {
             margin-top: 32px;
         }
+        .two-cols-md & {
+            font-size: 24px;
+        }
+        .area__footer & {
+            &::after {
+                display: none;
+            }
+        }
     }
     &__content {
         @include clearfix;
@@ -94,6 +102,98 @@
             }
         }
     }
+    &__featured {
+        position: relative;
+        padding: 20px 40px;
+        margin-bottom: 90px;
+        &__title {
+            font-size: 24px;
+            font-weight: bold;
+            @include breakpoint(sm) {
+                font-size: 36px;
+            }
+        }
+        &__text {
+            font-size: 18px;
+            line-height: 1.6em;
+            color: white;
+            @include breakpoint(sm) {
+                font-size: 24px;
+            }
+        }
+        &__bg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        @include breakpoint(sm) {
+            width: 80%;
+            padding: 60px 90px;
+        }
+    }
+    &__text {
+        font-size: 24px;
+        margin-bottom: 64px;
+        text-align: center;
+        @include breakpoint(sm) {
+            font-size: 32px;
+        }
+    }
+    &__grid {
+        font-size: 0;
+        padding: 0 1px;
+        margin-bottom: 90px;
+        li {
+            border: 1px solid #000;
+            margin-top: -1px;
+            margin-left: -1px;
+            text-align: center;
+            font-size: 24px;
+            vertical-align: top;
+            .area__icon {
+                margin-bottom: 60px;
+            }
+        }
+    }
+    &__navi {
+        @include clearfix;
+        &__next,
+        &__prev {
+            padding: 48px;
+            transition: all 0.2s linear;
+            display: block;
+            width: 50%;
+            color: white;
+            float: left;
+            &:hover,
+            &.is-active {
+                background: darken($brand-primary, 10%);
+            }
+            &:hover {
+                color: #111;
+            }
+        }
+        &__prev {
+            text-align: right;
+        }
+        &__text {
+            margin-bottom: 28px;
+            opacity: 0.5;
+        }
+        &__title {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 20px;
+            @include breakpoint(sm) {
+                font-size: 24px;
+            }
+        }
+    }
     &--quote {
         .area__content {
             background: url(../img/quote-bg.png) center center no-repeat;
@@ -103,6 +203,11 @@
     &--featured {
         .area__content {
             padding: 64px 0;
+            background: $brand-primary;
+        }
+    }
+    &--navi {
+        .area__content {
             background: $brand-primary;
         }
     }
