@@ -81,7 +81,11 @@
     &:focus {
         border-color: darken($brand-primary, 15%);
     }
+    &.form-round {
+        border-radius: 30px;
+    }
 }
+
 
 // load more
 .load-more {
